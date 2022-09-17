@@ -1,11 +1,11 @@
 [package]
 name = "mexmin"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["thyrc <thyrc@users.noreply.github.com>"]
 edition = "2018"
 publish = false
 description = "Dump Maxmind GeoIP / GeoLite data"
 
 [dependencies]
-maxminddb = "0.13"
-clap = "2"
+maxminddb = "0.23"
+clap = {version = "3", default-features = false, features = ["std"] }
